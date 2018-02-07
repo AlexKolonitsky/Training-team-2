@@ -1,0 +1,53 @@
+body{
+  background-color: #9098cd; !important;
+}
+.center_form_position {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+.center_form_position.responsive {
+  width: 50%;
+  height: 60%;
+  min-width: 350px;
+  max-width: 500px;
+  padding: 40px;
+}
+h2{
+  color: #0d141c;
+  font-family: Lobster, sans-serif;
+}
+label{
+  font-family: Lobster, sans-serif;
+  font-size: 20px;
+}
+form{
+  background: #FFFFFF;
+  padding: 20px 20px 20px 20px;
+  border: 3px solid #17b5ee;
+  border-radius: 10px;
+}
+form > div > div > input[type = "text"],
+form > div > div > input[type = "password"],
+form > div > div > input[type = "email"]{
+  width: 100%;
+  border: 0;
+  padding: 20px 20px 20px 50px;
+  border-radius: 20px;
+  background: #ffffff;
+}
+form > div > div > input[type = "text"]:focus,
+form > div > div > input[type = "password"]:focus,
+form > div > div > input[type = "email"]:focus{
+  background: #fdffff;
+}
+form > div > div > input[type = "text"]:valid,
+form > div > div > input[type = "password"]:valid,
+form > div > div > input[type = "email"]:valid{
+  background: #44fa9d;
+}
+form > div > div > input[type = "text"]:invalid:not(:focus),
+form > div > div > input[type = "password"]:invalid:not(:focus),
+form > div > div > input[type = "email"]:invalid:not(:focus){
+  background: #ff8379;
+}
