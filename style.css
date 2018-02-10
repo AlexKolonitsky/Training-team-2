@@ -1,3 +1,10 @@
+.container{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .login-div-main {
   max-width: 400px;
   min-width: 230px;
@@ -10,6 +17,7 @@
 .login-div-main h1 {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
+  text-transform: uppercase
 }
 
 .login-inputs label {
@@ -23,27 +31,39 @@
 
 .login-button button {
   margin-top: 15px;
-  padding: 5px 30px;
+  padding: 5px 15px;
   font-size: 16px;
 }
 
-form > div > input[type = "text"],
-form > div > input[type = "email"],
-form > div > input[type = "password"] {
+.login-button a{
+  text-decoration:none;
+  color: #fff;
+  padding: 5px 5px;
+}
+
+.login-input {
+  box-sizing: border-box;
   width: 100%;
   padding: 10px 10px 10px 10px;
   border-radius: 5px;
+  outline: 0;
 }
 
-form > div > input[type = "text"]:focus,
-form > div > input[type = "email"]:focus,
-form > div > input[type = "password"]:focus {
+.login-input:focus {
   border-color: #000;
   outline: 0;
 }
 
-form > div > input[type = "text"]:valid,
-form > div > input[type = "email"]:valid,
-form > div > input[type = "password"]:valid {
+.login-input:valid {
   background: rgb(250, 255, 189);
+}
+
+.login-button .btn{
+  border: 0;
+  border-radius: 5px;
+  background: #39e24d;
+  cursor: pointer;
+  padding: 8px 16px;
+  width: 100px;
+  margin: 10px auto;
 }
