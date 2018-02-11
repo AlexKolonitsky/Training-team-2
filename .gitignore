@@ -1,0 +1,6 @@
+# folder idea 
+.idea/
+
+# file for stylistics(jshint)
+stylistics/*.jshintrc
+

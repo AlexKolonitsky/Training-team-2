@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create user</title>
+  <link rel="stylesheet" href="stylistics/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <section class="create-user">
+      <h1>create profile</h1>
+      <form action="#">
+        <div class="create-div-for-all-data">
+          <div class="create-photo">
+            <img class="user-photo" src="img/noUser.png" alt="User photo">
+            <input class="inputfile" type="file" id="create-photo-input">
+            <!--I hid the input to show label how one button-->
+            <label for="create-photo-input">Choose a photo</label>
+          </div>
+          <div class="create-user-data">
+            <label for="create-first-name">First Name:</label>
+            <input class="create-user-data-input" type="text" name="create-first-name" id="create-first-name" title="Enter your first name" required>
+            <label for="create-last-name">Last Name:</label>
+            <input class="create-user-data-input" type="text" name="create-last-name" id="create-last-name" title="Enter your last name" required>
+            <label for="create-phone">Phone:</label>
+            <input class="create-user-data-input" type="tel" name="create-phone" id="create-phone" title="Enter your phone +375( __ )___-__-__" pattern="[\+]\d{3}[\(](29|33|44)[\)]\d{3}[\-]\d{2}[\-]\d{2}" placeholder="+375( __ )___-__-__" required>
+          </div>
+        </div>
+        <div class="login-buttons">
+          <button type="submit" class="btn">Save</button>
+        </div>
+      </form>
+    </section>
+  </div>
+</body>
+</html>
