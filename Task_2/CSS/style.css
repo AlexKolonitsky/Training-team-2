@@ -1,0 +1,64 @@
+.login_profile {
+  width: 35%;
+  /*height: 20%;*/
+  border: 5px solid #c7ccc6;
+  margin: 15px auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+.login_profile h1 {
+  text-align: center;
+  color: darkgrey;
+  font-family: Georgia;
+}
+.check {
+  text-align: center;
+  padding: 20px;
+  /*border: 1px solid black;*/
+  margin: 30px;
+
+}
+.inputs_login label {
+  font-family: Georgia;
+  font-size: 15px;
+}
+.inputs_login input {
+  border-radius: 5px;
+}
+.inputs_login {
+  width: 30%;
+  position: relative;
+  left: 300px;
+  /*border: 1px solid black;*/
+}
+.photo {
+  position: relative;
+  bottom: 150px;
+  /*border: 1px solid black;*/
+  /*width: 30%;*/
+}
+button {
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  width: 130px;
+  height: 35px;
+  font-size: 18px;
+  font-family: Georgia;
+  cursor: pointer;
+  background: white;
+}
+button:hover {
+  background: lightgray;
+}
+#picture {
+  font-family: Georgia;
+}
+.picture {
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  position: relative;
+  left: 50px;
+  top: -300px;
+}
