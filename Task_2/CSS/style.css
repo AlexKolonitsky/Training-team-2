@@ -1,9 +1,7 @@
 .login_profile {
-  width: 35%;
-  /*height: 20%;*/
-  border: 5px solid #c7ccc6;
+  width: 40%;
+  border: 1px solid #c7ccc6;
   margin: 15px auto;
-  padding: 10px;
   border-radius: 10px;
 }
 .login_profile h1 {
@@ -16,7 +14,6 @@
   padding: 20px;
   /*border: 1px solid black;*/
   margin: 30px;
-
 }
 .inputs_login label {
   font-family: Georgia;
@@ -35,10 +32,11 @@
   position: relative;
   bottom: 150px;
   /*border: 1px solid black;*/
-  /*width: 30%;*/
+  width: 30%;
+  left: 50px;
 }
 button {
-  border: 2px solid lightgray;
+  border: 1px solid lightgray;
   border-radius: 5px;
   width: 130px;
   height: 35px;
@@ -60,5 +58,33 @@ button:hover {
   border-radius: 100%;
   position: relative;
   left: 50px;
-  top: -300px;
+  bottom: 285px;
+}
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.inputfile + label {
+  font-family: Georgia;
+  font-size: 18px;
+  color: black;
+  background-color: white;
+  display: inline-block;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+.inputfile:focus + label,
+.inputfile + label:hover {
+  background-color: lightgray;
+}
+/*.inputfile:focus + label {*/
+/*outline: 1px dotted #000;*/
+/*outline: -webkit-focus-ring-color auto 5px;*/
+/*}*/
+.inputfile + label {
+  cursor: pointer;
 }
