@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Job search</title>
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="job-search-main-container">
+    <nav class="job-search-navigation">
+      <h1>hr app</h1>
+      <ul>
+        <li><a href="#">Interview</a></li>
+        <li><a href="#">Vacancies</a></li>
+        <li><a href="#">Candidates</a></li>
+        <li><a href="#">Management</a></li>
+      </ul>
+    </nav>
+    <div class="job-search-main-container-vacancies">
+      <header>
+        <div class="header-search-div-first">
+          <span class="icon icon-magnifier"></span>
+          <label>
+            <input type="search" name="search" placeholder="Search for vacancies, candidates...">
+          </label>
+        </div>
+        <div class="header-search-div-second">
+          <span class="icon icon-notification"></span>
+          <span class="icon icon-entry"></span>
+        </div>
+      </header>
+      <section>
+        <h2>Vacancies</h2>
+        <span>Filter by</span>
+        <select class="filter filter-job-position" name="job-position">
+          <option disabled>Position</option>
+          <option selected value="Java">Java</option>
+          <option value="Php">Php</option>
+          <option value="JS">JS</option>
+          <option value="QA">QA</option>
+        </select>
+        <select class="filter filter-adequacy" name="adequacy">
+          <option selected disabled>Adequacy</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+        <select class="filter filter-technical" name="technical">
+          <option selected disabled>Technical</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </section>
+      <main>
+        <table>
+          <thead>
+          <tr>
+            <th>Position</th>
+            <th>Adequacy</th>
+            <th>Technical</th>
+            <th>Candidates</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Java Developer</td>
+            <td>4</td>
+            <td>3</td>
+            <td>View Candidates</td>
+          </tr>
+          <tr>
+            <td>Java Developer</td>
+            <td>2</td>
+            <td>4</td>
+            <td>View Candidates</td>
+          </tr>
+          <tr>
+            <td>Java Developer</td>
+            <td>2</td>
+            <td>3</td>
+            <td>View Candidates</td>
+          </tr>
+          <tr>
+            <td>Java Developer</td>
+            <td>4</td>
+            <td>4</td>
+            <td>View Candidates</td>
+          </tr>
+          <tr>
+            <td>Java Developer</td>
+            <td>1</td>
+            <td>2</td>
+            <td>View Candidates</td>
+          </tr>
+          <tr>
+            <td>Java Developer</td>
+            <td>4</td>
+            <td>1</td>
+            <td>View Candidates</td>
+          </tr>
+          </tbody>
+        </table>
+      </main>
+      <footer>
+        <div class="navigation-in-vacancies">
+          <form>
+            <label for="rows-per-page">Rows per page:</label>
+            <select name="rows-per-page" id="rows-per-page">
+              <option value="5">5</option>
+              <option selected value="10">10</option>
+              <option value="1">15</option>
+            </select>
+          </form>
+          <span class="current-page-vacancies">1-10 of 100</span>
+          <span class="icon icon-arrow-left"></span>
+          <span class="icon icon-arrow-right"></span>
+        </div>
+        <div class="circle"><span class="icon icon-plus"></span></div>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

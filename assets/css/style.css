@@ -1,0 +1,403 @@
+*{
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*Page 1 login*/
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.login-div-main {
+  box-sizing: border-box;
+  max-width: 400px;
+  min-width: 230px;
+  margin: 10px auto;
+  border: 2px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.login-inputs label {
+  font-size: 16px;
+}
+
+.login-input {
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  outline: 0;
+}
+
+.login-input:focus {
+  border-color: #000;
+}
+
+.login-input:valid {
+  background: rgb(250, 255, 189);
+}
+
+.login-buttons {
+  text-align: center;
+}
+
+.login-buttons a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 5px;
+}
+
+.login-buttons .btn {
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  background: #34d058;
+  cursor: pointer;
+  padding: 8px 25px;
+  width: 100px;
+  margin: 15px auto 10px;
+  font-size: 16px;
+}
+
+.login-buttons .btn-sign-up {
+  background: #4285f4;
+}
+
+/*Page 2 register*/
+
+.create-user {
+  box-sizing: border-box;
+  max-width: 700px;
+  min-width: 330px;
+  margin: 10px auto;
+  border: 2px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.create-div-for-all-data {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.create-photo {
+  display: flex;
+  width: 40%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.user-photo {
+  border-radius: 100%;
+  height: 200px;
+  width: 200px;
+}
+
+.inputfile { /*I hid the input to show label how one button*/
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.inputfile + label {
+  margin-top: 15px;
+  font-size: 16px;
+  color: white;
+  background-color: #34d058;
+  cursor: pointer;
+  padding: 5px 16px;
+  border-radius: 5px;
+}
+
+.create-user-data {
+  width: 60%;
+}
+
+.create-user-data-input {
+  margin-bottom: 10px;
+  margin-left: 60px;
+  display: block;
+  box-sizing: border-box;
+  width: 80%;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+  outline: 0;
+}
+
+.create-user-data-input:focus {
+  border-color: #000;
+}
+
+.create-user-data-input:valid {
+  background: rgb(250, 255, 189);
+}
+
+.create-user-data label {
+  font-size: 16px;
+  margin-left: 60px;
+}
+
+@media (max-width: 576px) {
+  .create-div-for-all-data {
+    flex-wrap: wrap;
+  }
+
+  .create-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  .inputfile + label {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .create-user-data {
+    width: 100%;
+  }
+
+  .create-user-data-input {
+    margin: 0 auto;
+  }
+}
+
+/*Page 3 jobSearch*/
+/*Left part*/
+.job-search-main-container {
+  display: flex;
+}
+
+.job-search-navigation {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 14%;
+  min-width: 150px;
+  background-color: #eee;
+  box-shadow: 0 0 10px rgba(150,150,150,0.5);
+}
+
+.job-search-navigation h1{
+  font-weight: lighter;
+  text-align: left;
+  margin: 0 0 0 25px;
+  color: #7f8c8d;
+}
+
+.job-search-navigation ul {
+  padding: 0;
+}
+
+.job-search-navigation li {
+  list-style: none;
+}
+
+.job-search-navigation li a{
+  display: block;
+  text-decoration: none;
+  padding: 20px 0 20px 25px;
+  color: #000;
+  font-size: 18px;
+}
+
+.job-search-navigation li a:hover,
+.job-search-navigation li a:active,
+.job-search-navigation li a:focus{
+  background-color: #ced3cd;
+}
+
+/*Right part*/
+
+.job-search-main-container-vacancies {
+  display: flex;
+  flex-direction: column;
+  width: 86%;
+}
+
+.job-search-main-container-vacancies header {
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  min-height: 7vh;
+  box-shadow: inset 2px -2px 7px rgba(150,150,150,0.5);
+}
+
+.header-search-div-first{
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url(../../assets/images/sprite.png) no-repeat;
+}
+
+.icon.icon-magnifier{
+  margin:0 5px 0 30px;
+  background-position: 0 -40px;
+}
+
+header input[type="search"]{
+  background-color: #eee;
+  border: 0;
+  width: 260px;
+  font-size: 16px;
+}
+
+.header-search-div-second{
+  display: flex;
+  align-items: center;
+}
+
+.icon-notification {
+  background-position: -40px -20px;
+  margin-right:15px;
+}
+
+.icon-entry {
+  background-position: -20px 0;
+  margin-right:25px;
+}
+
+.job-search-main-container-vacancies section {
+  min-height: 15vh;
+}
+
+.job-search-main-container-vacancies section h2 {
+  font-weight: lighter;
+  text-align: left;
+  margin: 15px 0 15px 40px;
+}
+
+.job-search-main-container-vacancies section span{
+  margin: 0 10px 0 40px;
+  font-size: 16px;
+}
+
+.filter{
+  margin: 5px 0;
+  border-radius: 10px;
+  background: transparent;
+  height: 28px;
+  width: 160px;
+  padding: 0 5px 0 10px;
+  font-size: 16px;
+  border: 2px solid #eee;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  vertical-align: middle;
+}
+
+select.filter::-ms-expand {
+  display: none;
+}
+
+.filter.filter-job-position{
+  background: url(../../assets/images/arrowDown.png) 96% / 15% no-repeat #eee;
+}
+
+.filter.filter-adequacy{
+  background: url(../../assets/images/close.png) 96% / 15% no-repeat;
+}
+
+.filter.filter-technical{
+  background: url(../../assets/images/close.png) 96% / 15% no-repeat;
+}
+
+.job-search-main-container-vacancies main {
+  min-height: 70vh;
+}
+
+.job-search-main-container-vacancies main table{
+  border: 1px solid #eee;
+  width: 100%;
+  line-height: 78px;
+  text-align: center;
+}
+
+.job-search-main-container-vacancies main table tr{
+  border-bottom: 1px solid #eee;
+}
+
+.job-search-main-container-vacancies footer {
+  min-height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+.navigation-in-vacancies{
+  display: flex;
+  align-items: center;
+}
+
+.job-search-main-container-vacancies footer label{
+  margin: 0 10px 0 40px;
+}
+
+.job-search-main-container-vacancies footer select{
+  border: none;
+  outline: none;
+}
+
+.job-search-main-container-vacancies footer .current-page-vacancies{
+  margin: 0 15px;
+}
+
+.icon.icon-arrow-left{
+  background-position: -40px 0;
+  margin-right: 20px;
+}
+
+.icon.icon-arrow-right{
+  background-position: 0 -20px;
+}
+
+.circle {
+  position: relative;
+  top: -25px;
+  width: 50px;
+  height: 50px;
+  background: #eee;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  margin-right: 40px;
+  box-shadow: 0 3px 6px rgba(150,150,150,0.5);
+}
+
+.circle:hover {
+  background: #ced3cd;
+  cursor: pointer;
+}
+
+.icon.icon-plus{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-position: -20px -40px;
+}
