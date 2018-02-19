@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login page</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta charset="utf-8">
+</head>
+
+<body>
+<div class="authorisation">
+  <form  class="screen" action="#">
+    <ul class="tab-group">
+      <li class="tab"><a href="index.html">Log In</a></li>
+      <li class="tab active"><a href="signUp.html">Sign Up</a></li>
+    </ul>
+
+    <div class="app-title">
+      <h1>create profile</h1>
+    </div>
+
+    <div class="signUp-form">
+      <div class="photo">
+        <img class="portrait" id="image_accounts" src="assets/img/account.png">
+        <div>
+          <label class="label-uploads" for="image_uploads" >load image</label>
+          <input type="file" id="image_uploads" name="image_uploads" accept=".jpg, .jpeg, .png" multiple>
+          <script>
+            var input = document.getElementById('image_uploads');
+            input.style.opacity = 0;
+            input.addEventListener('change', updateImageDisplay);
+
+            var img = document.getElementById('image_accounts');
+
+            function updateImageDisplay() {
+              var curFiles = input.files;
+              if(curFiles.length !== 0){
+                for(var i = 0; i < curFiles.length; i++){
+                  if(validFileType(curFiles[i])){
+                    var image = document.getElementById('image_accounts');
+                    image.src = window.URL.createObjectURL(curFiles[i]);
+                  }
+                }
+              }
+            }
+
+            var fileTypes = [
+              'image/jpeg',
+              'image/pjpeg',
+              'image/png'
+            ]
+
+            function validFileType(file) {
+              for(var i = 0; i < fileTypes.length; i++) {
+                if(file.type === fileTypes[i]) {
+                  return true;
+                }
+              }
+              return false;
+            }
+          </script>
+
+        </div>
+      </div>
+      <div class="signUp">
+        <div class="control-group">
+          <input type="text" class="signUp-field" value="" placeholder="login" id="login-name" required>
+          <span class="tooltip-text">Enter your login</span>
+        </div>
+
+        <div class="control-group">
+          <input type="email" class="signUp-field" value="" placeholder="email" id="login-email" required>
+          <span class="tooltip-text">Enter your email</span>
+        </div>
+
+        <div class="control-group">
+          <input type="password" class="signUp-field" value="" placeholder="password" id="login-pass" required>
+          <span class="tooltip-text">Enter your password</span>
+        </div>
+      </div>
+
+      <input class="btn" type="submit" name="submit" value="Sign Up">
+
+    </div>
+  </form >
+</div>
+</body>
+</html>
