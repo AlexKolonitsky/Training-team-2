@@ -1,12 +1,13 @@
 /*Task-1 login-form*/
 .login {
+  position: relative;
   box-sizing: border-box;
-  max-width: 400px;
+  max-width: 350px;
   min-width: 250px;
-  height: 60%;
-  margin: 20px 0 0 450px;
+  height: 350px;
+  margin: 15px auto;
   padding: 15px;
-  border: 3px solid #c7ccc6;
+  border: 3px solid #bec6c5;
   border-radius: 15px;
 }
 h1 {
@@ -32,7 +33,7 @@ h1 {
   text-align: center;
   width: 20%;
   height: 10%;
-  margin: 170px 0 0 3px;
+  margin: 170px 0 0 23px;
 }
 .buttons a {
   text-decoration: none;
@@ -43,41 +44,44 @@ h1 {
   padding: 5px 30px;
   font-size: 16px;
   font-family: Georgia;
-  border: 3px solid lightgray;
+  border: 3px solid #aebab8;
   border-radius: 5px;
-  background: white;
+  background: #f2efef;
   cursor: pointer;
 }
 button:hover {
-  background: lightgray;
+  background: #aebab8;
 }
-.login_profile {
+/*TASK-2.Register*/
+* {
+  font-family: Georgia;
+}
+.login-profile {
+  position: relative;
   box-sizing: border-box;
   max-width: 400px;
   min-width: 250px;
   height: 50%;
   border: 1px solid #c7ccc6;
-  margin: 15px 0 0 450px;
+  margin: 15px auto;
   border-radius: 10px;
 }
-.login_profile h1 {
+.login-profile h1 {
   text-align: center;
-  color: darkgrey;
-  font-family: Georgia;
+  color: #848181;
 }
-.inputs_login label {
-  font-family: Georgia;
+.inputs-login label {
   font-size: 16px;
 }
-.inputs_login input {
+.inputs-login input {
   border-radius: 5px;
   width: 170px;
 }
-.inputs_login {
+.inputs-login {
   box-sizing: border-box;
   width: 175px;
   height: 150px;
-  margin-left:  210px;
+  margin-left: 210px;
 }
 .check {
   box-sizing: border-box;
@@ -85,29 +89,25 @@ button:hover {
   height: 70px;
   text-align: center;
   padding: 15px;
- margin: 170px 0 0 70px;
+  margin: 170px 0 0 70px;
 }
 .photo {
-  box-sizing:border-box;
+  box-sizing: border-box;
   width: 105px;
   height: 25px;
   margin: 120px 0 0 40px;
 }
 button {
-  border: 1px solid lightgray;
+  border: 1px solid #bfc3c9;
   border-radius: 5px;
   width: 130px;
   height: 35px;
   font-size: 18px;
-  font-family: Georgia;
   cursor: pointer;
-  background: white;
+  background: #ffffff;
 }
 button:hover {
-  background: lightgray;
-}
-#picture {
-  font-family: Georgia;
+  background: #bcbaba;
 }
 .picture {
   margin: -15px 0 0 25px;
@@ -123,33 +123,34 @@ button:hover {
   z-index: -1;
 }
 .inputfile + label {
-  font-family: Georgia;
   font-size: 18px;
   color: black;
-  background-color: white;
+  background-color: #ffffff;
   display: inline-block;
-  border: 1px solid lightgray;
+  border: 1px solid #d8d4d4;
   border-radius: 5px;
 }
 .inputfile:focus + label,
 .inputfile + label:hover {
-  background-color: lightgray;
+  background-color: #d8d4d4;
 }
 .inputfile + label {
   cursor: pointer;
 }
-/*Task3*/
+/*Task3*Vacancies*/
+*{
+  font-family: Georgia;
+}
 div {
   position: fixed;
   width: 100%;
   height: 100%;
 }
 .list {
-  /*border:1px solid black;*/
   width: 15%;
   height: 100%;
-  background: lightgray;
-  box-shadow: 0px 0px 10px 1px gray;
+  background: #bcbcbc;
+  box-shadow: 0px 0px 10px 1px #b7b3b3;
   z-index: 1;
 }
 .list h1 {
@@ -166,15 +167,14 @@ div {
 .list li a {
   display: block;
   text-decoration: none;
-  font-family: Georgia;
   font-size: 18px;
   padding: 20px 0 20px 25px;
-  color: black;
+  color: #000000;
 }
 .list li a:hover,
 .list li a:active,
 .list li a:focus {
-  background-color: gray;
+  background-color: #919191;
 }
 .resume {
   width: 85%;
@@ -192,55 +192,53 @@ div {
 }
 .icon-bell {
   background-position: 0px 0px;
-  margin-left: 770px;
+  margin-right: 15px;
 }
 .icon-out {
   background-position: -32px -16px;
-  margin-left: 20px;
+  margin-right: 25px  ;
 }
 .search {
   height: 5%;
-  background: lightgray;
-  box-shadow: 0 0 5px 2px lightgray;
+  width: 85%;
+  background: #c4c4c4;
+  box-shadow: 0 0 5px 2px #c4c4c4;
   z-index: 1;
 }
 .search input {
-  font-family: Georgia;
-  color: gray;
+  color: #000000;
   font-size: 14px;
-  background: lightgray;
-  width: 250px;
-  border: 1px solid lightgray;
+  background: #c4c4c4;
+  width: 90%;
+  border: 1px solid #c4c4c4;
 }
 .header {
   height: 15%;
   margin-top: 35px;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #c6c6c6;
 }
 .header h3 {
   position: absolute;
-  font-family: Georgia;
   font-size: 18px;
   font-weight: lighter;
   margin: 15px 0 0 25px;
 }
 .header span {
-  font-family: Georgia;
   margin: 15px 0 0 25px;
 }
 .header select {
-  background: lightgray;
+  background: #c4c4c4;
   border-radius: 15px;
   margin: 60px 0 0 25px;
   width: 10%;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url("../../assets/images/down.png") 95% /15% no-repeat lightgray;
+  background: url("../../assets/images/down.png") 95% /15% no-repeat #c4c4c4;
 }
 .header input {
   border-radius: 15px;
-  border: 1px solid lightgray;
+  border: 1px solid #c4c4c4;
   width: 10%;
   background: url("../../assets/images/close.png") 90%/10% no-repeat;
 }
@@ -251,18 +249,17 @@ div {
 table {
   width: 85%;
   height: 100%;
-  font-family: Georgia;
   text-align: left;
   border-collapse: collapse;
 }
 th {
   height: 8%;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #c4c4c4;
   padding-left: 40px;
 }
 td {
   padding-left: 40px;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid #c4c4c4;
 }
 .footer {
   width: 85%;
@@ -270,12 +267,11 @@ td {
   margin-top: 553px;
 }
 .footer select {
-  background: white;
+  background: #ffffff;
   border: none;
   width: 50px;
 }
 .footer form {
-  font-family: Georgia;
   width: 15%;
   height: 10%;
   padding: 0 30px 20px 30px;
@@ -283,7 +279,6 @@ td {
 }
 .current-page-vacancies {
   position: absolute;
-  font-family: Georgia;
   margin: -25px 10px 0 240px;
 }
 .icon-left {
@@ -301,7 +296,7 @@ td {
   top: -25px;
   width: 50px;
   height: 50px;
-  background: #eee;
+  background: #e0e0e0;
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
   border-radius: 25px;
