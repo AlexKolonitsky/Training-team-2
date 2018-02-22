@@ -2,31 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Login form</title>
-  <link rel="stylesheet" href="assets/css/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  <title>Login</title>
 </head>
 <body>
-<div class="container">
-  <div class="login-div-main">
-    <h1>hr app</h1>
-    <form action="#">
-      <div class="login-inputs">
-        <label for="login">Login:</label>
-        <input class="login-input" type="text" name="login" id="login" title="Enter your login" required>
-        <label for="email">Email:</label>
-        <input class="login-input" type="email" name="email" id="email" title="Enter your email" required>
-        <label for="password">Password:</label>
-        <input class="login-input" type="password" name="password" id="password" title="Enter your password" required>
+
+<form class="form-login" action="#">
+  <fieldset class="account-info">
+    <h2 class="form-header">Login-form</h2>
+    <div class="form-field">
+      Name
+      <div class="tooltip">
+        <input type="text" name="name" placeholder="Full name" required>
+        <span class="tooltip-text">Enter your name</span>
       </div>
-      <div class="login-buttons">
-        <button type="submit" class="btn">Sign in</button>
-        <a class="btn btn-sign-up" href="register.html" >Sign up</a>
+    </div>
+    <div class="form-field">
+      Email
+      <div class="tooltip">
+        <input type="email" name="email" placeholder="Email address" required>
+        <span class="tooltip-text">email@example.com</span>
       </div>
-    </form>
-  </div>
-</div>
+    </div>
+    <div class="form-field">
+      Password
+      <div class="tooltip">
+        <input type="password" name="password" placeholder="Password" required>
+        <span class="tooltip-text">Enter your password</span>
+      </div>
+    </div>
+    <input class="btn" type="submit" name="submit" value="Login">
+    <a href="register.html">Create profile</a>
+  </fieldset>
+</form>
+
 </body>
 </html>

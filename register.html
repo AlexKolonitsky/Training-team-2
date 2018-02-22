@@ -2,38 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Create user</title>
-  <link rel="stylesheet" href="assets/css/normalize.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  <title>Registration</title>
 </head>
 <body>
-  <div class="container">
-    <section class="create-user">
-      <h1>create profile</h1>
-      <form action="#">
-        <div class="create-div-for-all-data">
-          <div class="create-photo">
-            <img class="user-photo" src="assets/images/noUser.png" alt="User photo">
-            <input class="inputfile" type="file" id="create-photo-input">
-            <!--I hid the input to show label how one button-->
-            <label for="create-photo-input">Choose a photo</label>
-          </div>
-          <div class="create-user-data">
-            <label for="create-first-name">First Name:</label>
-            <input class="create-user-data-input" type="text" name="create-first-name" id="create-first-name" title="Enter your first name" required>
-            <label for="create-last-name">Last Name:</label>
-            <input class="create-user-data-input" type="text" name="create-last-name" id="create-last-name" title="Enter your last name" required>
-            <label for="create-phone">Phone:</label>
-            <input class="create-user-data-input" type="tel" name="create-phone" id="create-phone" title="Enter your phone +375( __ )___-__-__" pattern="[\+]\d{3}[\(](29|33|44)[\)]\d{3}[\-]\d{2}[\-]\d{2}" placeholder="+375( __ )___-__-__" required>
+
+<form class="form-registration" action="#">
+  <fieldset class="account-info">
+    <h2 class="form-header">Create profile</h2>
+    <div class="registration-info">
+      <div class="form-info">
+        <div class="form-field">
+          Name
+          <div class="tooltip">
+            <input type="text" name="name" placeholder="Your name" required>
+            <span class="tooltip-text">Enter your name</span>
           </div>
         </div>
-        <div class="login-buttons">
-          <button type="submit" class="btn">Save</button>
+        <div class="form-field">
+          Surname
+          <div class="tooltip">
+            <input type="text" name="surname" placeholder="Your surname" required>
+            <span class="tooltip-text">Enter your name</span>
+          </div>
         </div>
-      </form>
-    </section>
-  </div>
+        <div class="form-field">
+          Phone
+          <div class="tooltip">
+            <input type="tel" name="phone" placeholder="+375(__)___-__-__" pattern="^\+375\(\d{2}\)\d{3}-\d{2}-\d{2}$" required>
+            <span class="tooltip-text">Format: +375(XX)XXX-XX-XX</span>
+          </div>
+        </div>
+      </div>
+      <div class="form-image">
+        <div class="form-photo"></div>
+        <input type="file" name="photo" id="photo" class="input-file" required>
+        <label for="photo">Choose a photo...</label>
+      </div>
+    </div>
+    <input class="btn" type="submit" name="submit" value="Registration">
+  </fieldset>
+</form>
+
 </body>
 </html>

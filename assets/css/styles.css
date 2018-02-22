@@ -1,0 +1,454 @@
+:root {
+  --gray: #DCDCDC;
+  --dark-gray: #636466;
+  --light-gray: #E8E8E8;
+  --font: #3F3F3F;
+}
+
+form {
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.form-login {
+  display: block;
+  margin: auto;
+  width: 300px;
+}
+
+.account-info {
+  margin: auto;
+  border: 0;
+  padding: 40px 20px;
+}
+
+.account-info .form-header {
+  color: var(--dark-gray);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.account-info .form-field {
+  color: var(--dark-gray);
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.account-info input {
+  background: white;
+  border: none;
+  border-bottom: 2px solid var(--light-gray);
+  color: var(--dark-gray);
+  padding: 6px;
+  margin-top: 6px;
+  width: 95%;
+}
+
+.account-info .btn {
+  display: block;
+  background: var(--gray);
+  border: 0;
+  color: var(--dark-gray);
+  cursor: pointer;
+  font-weight: bold;
+  width: 100px;
+  margin: auto;
+}
+
+.account-info .btn:hover {
+  background: var(--dark-gray);
+  color: white;
+}
+
+.form-login a {
+  display: block;
+  color: var(--dark-gray);
+  font-style: italic;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 150px;
+  background-color: var(--dark-gray);
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 80%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border: 5px solid transparent;
+  border-top-color: var(--dark-gray);
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+.registration-info {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.form-registration {
+  display: block;
+  margin: auto;
+  max-width: 600px;
+}
+
+.form-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  border: solid 2px var(--dark-gray);
+}
+
+.input-file {
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.form-image label {
+  margin: 10px;
+  font-weight: bold;
+  color: var(--dark-gray);
+  background-color: var(--light-gray);
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.form-image label:hover {
+  background-color: var(--dark-gray);
+  color: white;
+}
+
+.vacancies-body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header {
+  background: var(--light-gray);
+  box-shadow: 5px 0 8px var(--gray);
+  min-height: calc(100vh - 5px);
+  width: 200px;
+  padding-top: 5px;
+}
+
+.header-logo {
+  padding-left: 20px;
+  color: var(--dark-gray);
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-item {
+  font-size: 18px;
+  min-height: 30px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: var(--font);
+}
+
+.menu-item:hover {
+  background: var(--gray);
+}
+
+.menu-item_active {
+  background: var(--gray);
+}
+
+.content {
+  width: 100%;
+}
+
+.content-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--light-gray);
+  min-height: 35px;
+  box-shadow: 0 5px 8px var(--gray);
+  padding: 0 15px;
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10px;
+}
+
+.search-image {
+  width: 20px;
+  height: 20px;
+  background: url(../images/sprite.png) -116px 0;
+}
+
+.search-input {
+  width: 300px;
+  border: none;
+  background: var(--light-gray);
+}
+
+.header-button button {
+  margin: 0 10px;
+  border: none;
+  width: 20px;
+  height: 20px;
+}
+
+.button-bell {
+  background: url(../images/sprite.png) -175px -2px;
+}
+
+.button-enter {
+  background: url(../images/sprite.png) -413px -1px;
+}
+
+.header-text {
+  font-size: 20px;
+  font-weight: lighter;
+  padding: 30px;
+  margin: 0;
+}
+
+.filter span {
+  font-size: 14px;
+  padding: 0 15px;
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  color: var(--font);
+}
+
+td {
+  padding: 20px 15px;
+}
+
+td a {
+  text-decoration: none;
+  color: var(--font);
+}
+
+th {
+  padding: 8px 15px;
+  text-align: left;
+}
+
+tr {
+  border: 1px solid var(--gray);
+}
+
+.button-add {
+  position: fixed;
+  right: 20px;
+  bottom: 50px;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  border: none;
+  color: var(--dark-gray);
+  background: var(--light-gray);
+  box-shadow: 0 5px 8px var(--gray);
+  font-size: 30px;
+  font-weight: inherit;
+}
+
+.button-add:hover {
+  background: var(--gray);
+}
+
+.content-body {
+  padding: 0;
+  min-height: calc(100vh - 100px);
+}
+
+.content-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 50px;
+}
+
+.content-footer span {
+  font-size: 11px;
+  padding: 0 30px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropdown-button {
+  background-color: var(--gray);
+}
+
+.dropdown-button {
+  background-color: var(--light-gray);
+  color: var(--dark-gray);
+  width: 150px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.dropdown-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.filter-items .dropdown-arrow {
+  width: 20px;
+  height: 14px;
+  background: url(../images/sprite.png) 0 -5px;
+}
+
+.dropdown-content {
+  display: none;
+  border-radius: 12px;
+  position: absolute;
+  background-color: var(--light-gray);
+  width: 150px;
+  box-shadow: 0 8px 16px 0 var(--gray);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: var(--dark-gray);
+  padding: 3px 10px;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--gray);
+}
+
+.page-items .dropdown-button {
+  font-size: 12px;
+  background-color: white;
+  width: 30px;
+}
+
+.page-items .dropdown-content {
+  font-size: 12px;
+  bottom: 100%;
+  box-shadow: 0 4px 16px 0 var(--gray);
+  width: 30px;
+}
+
+.filter-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: white;
+  border: 1px solid var(--gray);
+  border-radius: 12px;
+  font-size: 12px;
+  color: var(--dark-gray);
+  width: 100px;
+  margin: 0 15px;
+}
+
+.button-delete {
+  margin-right: 3px;
+  border: none;
+  width: 15px;
+  height: 15px;
+  background: url(../images/sprite.png) -58px -4px;
+}
+
+.page-items span {
+  padding: 0;
+}
+
+.page-items .dropdown-button {
+  justify-content: space-around;
+}
+
+.page-items .dropdown-arrow {
+  width: 10px;
+  height: 14px;
+  background: url(../images/sprite.png) -355px -5px;
+}
+
+.button-nav button {
+  width: 20px;
+  height: 20px;
+  margin: 0 15px;
+  border: none;
+}
+
+.button-prev {
+  background: url(../images/sprite.png) -232px -2px;
+}
+
+.button-next {
+  background: url(../images/sprite.png) -290px -3px;
+}
+
