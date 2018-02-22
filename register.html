@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+  <title>Registration</title>
+</head>
+<body>
+
+<form class="form-registration" action="#">
+  <fieldset class="account-info">
+    <h2 class="form-header">Create profile</h2>
+    <div class="registration-info">
+      <div class="form-info">
+        <div class="form-field">
+          Name
+          <div class="tooltip">
+            <input type="text" name="name" placeholder="Your name" required>
+            <span class="tooltip-text">Enter your name</span>
+          </div>
+        </div>
+        <div class="form-field">
+          Surname
+          <div class="tooltip">
+            <input type="text" name="surname" placeholder="Your surname" required>
+            <span class="tooltip-text">Enter your name</span>
+          </div>
+        </div>
+        <div class="form-field">
+          Phone
+          <div class="tooltip">
+            <input type="tel" name="phone" placeholder="+375(__)___-__-__" pattern="^\+375\(\d{2}\)\d{3}-\d{2}-\d{2}$" required>
+            <span class="tooltip-text">Format: +375(XX)XXX-XX-XX</span>
+          </div>
+        </div>
+      </div>
+      <div class="form-image">
+        <div class="form-photo"></div>
+        <input type="file" name="photo" id="photo" class="input-file" required>
+        <label for="photo">Choose a photo...</label>
+      </div>
+    </div>
+    <input class="btn" type="submit" name="submit" value="Registration">
+  </fieldset>
+</form>
+
+</body>
+</html>
