@@ -1,3 +1,4 @@
+
 :root {
   --gray: #DCDCDC;
   --dark-gray: #636466;
@@ -451,4 +452,3 @@ tr {
 .button-next {
   background: url(../images/sprite.png) -290px -3px;
 }
-
