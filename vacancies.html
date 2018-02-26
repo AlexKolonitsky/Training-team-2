@@ -2,109 +2,144 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
   <title>Vacancies</title>
 </head>
-<body class="vacancies-body">
+<body>
 
-<div class="header">
-  <span class="header-logo">HR APP</span>
-  <nav class="menu">
-    <ul class="menu-list">
+<div class="main-div-vacancies">
+  <nav class="navigation">
+    <h2 class="logo">hr app</h2>
+    <ul class="nav nav-pills nav-stacked menu-list">
       <li class="menu-item"><a href="#">Interview</a></li>
-      <li class="menu-item menu-item_active"><a href="#">Vacancies</a></li>
+      <li class="menu-item"><a href="#">Vacancies</a></li>
       <li class="menu-item"><a href="#">Candidates</a></li>
       <li class="menu-item"><a href="#">Management</a></li>
     </ul>
   </nav>
-</div>
-<div class="content">
-  <div class="content-header">
-    <div class="search">
-      <div class="search-image"></div>
-      <input class="search-input" placeholder="Search for vacancies, candidates..." name="search" type="search">
-    </div>
-    <div class="header-button">
-      <button class="button-bell"></button>
-      <button class="button-enter"></button>
-    </div>
-  </div>
-  <div class="content-body">
-    <h1 class="header-text">Vacancies</h1>
-    <div class="filter">
-      <span>Filter by</span>
-      <div class="filter-items dropdown">
+  <div class="reset-padding content-vacancies">
+    <header class="content-vacancies-header">
+      <form class="search">
+        <span class="glyphicon glyphicon-menu-hamburger" id="nav-menu"></span>
+        <span class="search-image"></span>
+        <label>
+          <input class="search-input" type="search" name="search" placeholder="Search for vacancies, candidates...">
+        </label>
+      </form>
+      <div class="header-button">
+        <button class="button-bell"></button>
+        <button class="button-enter"></button>
+      </div>
+    </header>
+    <section class="content-vacancies-section">
+      <h1>Vacancies</h1>
+      <div class="filter">
+        <span>Filter by</span>
+        <div class="filter-items dropdown">
+          <div class="dropdown-button">
+            <span>Filter</span>
+            <div class="dropdown-arrow"></div>
+          </div>
+          <div class="dropdown-content">
+            <a href="#">filter 1</a>
+            <a href="#">filter 2</a>
+            <a href="#">filter 3</a>
+            <a href="#">filter 4</a>
+            <a href="#">filter 5</a>
+          </div>
+        </div>
+        <div class="filter-item">
+          <span>filter 1</span>
+          <button class="button-delete"></button>
+        </div>
+        <div class="filter-item">
+          <span>filter 2</span>
+          <button class="button-delete"></button>
+        </div>
+      </div>
+    </section>
+    <main class="content-vacancies-table table-responsive">
+      <table class="table">
+        <tr>
+          <th>Vacancies</th>
+          <th>-//-</th>
+          <th>-//-</th>
+          <th>Candidates</th>
+        </tr>
+        <tr>
+          <td>Java Developer</td>
+          <td>-&#45;&#45;</td>
+          <td>-&#45;&#45;</td>
+          <td><a href="#">View Candidates</a></td>
+        </tr>
+        <tr>
+          <td>Java Developer</td>
+          <td>-&#45;&#45;</td>
+          <td>-&#45;&#45;</td>
+          <td><a href="#">View Candidates</a></td>
+        </tr>
+        <tr>
+          <td>Java Developer</td>
+          <td>-&#45;&#45;</td>
+          <td>-&#45;&#45;</td>
+          <td><a href="#">View Candidates</a></td>
+        </tr>
+        <tr>
+          <td>Java Developer</td>
+          <td>-&#45;&#45;</td>
+          <td>-&#45;&#45;</td>
+          <td><a href="#">View Candidates</a></td>
+        </tr>
+        <tr>
+          <td>Java Developer</td>
+          <td>-&#45;&#45;</td>
+          <td>-&#45;&#45;</td>
+          <td><a href="#">View Candidates</a></td>
+        </tr>
+        <tr>
+          <td>Java Developer</td>
+          <td>-&#45;&#45;</td>
+          <td>-&#45;&#45;</td>
+          <td><a href="#">View Candidates</a></td>
+        </tr>
+      </table>
+      <button class="button-add">+</button>
+    </main>
+    <footer class="content-vacancies-footer">
+      <span>Rows per page:</span>
+      <div class="dropdown page-items">
         <div class="dropdown-button">
-          <span>Filter</span>
+          <span>10</span>
           <div class="dropdown-arrow"></div>
         </div>
         <div class="dropdown-content">
-          <a href="#">filter 1</a>
-          <a href="#">filter 2</a>
-          <a href="#">filter 3</a>
-          <a href="#">filter 4</a>
-          <a href="#">filter 5</a>
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
         </div>
       </div>
-      <div class="filter-item">
-        <span>filter 1</span>
-        <button class="button-delete"></button>
+      <span>1-10 of 100</span>
+      <div class="button-nav">
+        <button class="button-prev"></button>
+        <button class="button-next"></button>
       </div>
-      <div class="filter-item">
-        <span>filter 2</span>
-        <button class="button-delete"></button>
-      </div>
-    </div>
-    <table>
-      <tr>
-        <th>Vacancies</th>
-        <th>-//-</th>
-        <th>-//-</th>
-        <th>Candidates</th>
-      </tr>
-      <tr>
-        <td>Java Developer</td>
-        <td>---</td>
-        <td>---</td>
-        <td><a href="#">View Candidates</a></td>
-      </tr>
-      <tr>
-        <td>Java Developer</td>
-        <td>---</td>
-        <td>---</td>
-        <td><a href="#">View Candidates</a></td>
-      </tr>
-      <tr>
-        <td>Java Developer</td>
-        <td>---</td>
-        <td>---</td>
-        <td><a href="#">View Candidates</a></td>
-      </tr>
-    </table>
-    <button class="button-add">+</button>
-  </div>
-  <div class="content-footer">
-    <span>Rows per page:</span>
-    <div class="dropdown page-items">
-      <div class="dropdown-button">
-        <span>10</span>
-        <div class="dropdown-arrow"></div>
-      </div>
-      <div class="dropdown-content">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-      </div>
-    </div>
-    <span>1-10 of 100</span>
-    <div class="button-nav">
-      <button class="button-prev"></button>
-      <button class="button-next"></button>
-    </div>
+    </footer>
   </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"
+        integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 
+<script src="assets/js/script.js"></script>
 </body>
 </html>
