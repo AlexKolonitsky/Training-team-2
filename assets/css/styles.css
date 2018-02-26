@@ -165,11 +165,18 @@ form {
 }
 
 .header {
+  position: fixed;
   background: var(--light-gray);
   box-shadow: 5px 0 8px var(--gray);
   min-height: calc(100vh - 5px);
   width: 200px;
   padding-top: 5px;
+  transition: all 0.5s;
+  left: -100vw;
+  z-index: 1;
+}
+.header-active{
+  left: 0;
 }
 
 .header-logo {
@@ -221,7 +228,6 @@ form {
 .search {
   display: flex;
   flex-direction: row;
-  padding-left: 10px;
 }
 
 .search-image {
