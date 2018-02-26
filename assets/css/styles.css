@@ -1,13 +1,13 @@
 
-:root {
-  --gray: #DCDCDC;
+/*{Use only #
+  --gray: #dcdcdc;
   --dark-gray: #636466;
-  --light-gray: #E8E8E8;
-  --font: #3F3F3F;
-}
+  --light-gray: #e8e8e8;
+  --font: #3f3f3f;
+}*/
 
 form {
-  border: 1px solid var(--light-gray);
+  border: 1px solid #e8e8e8;
   border-radius: 5px;
   font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -25,13 +25,13 @@ form {
 }
 
 .account-info .form-header {
-  color: var(--dark-gray);
+  color: #636466;
   text-align: center;
   margin-bottom: 40px;
 }
 
 .account-info .form-field {
-  color: var(--dark-gray);
+  color: #636466;
   display: flex;
   flex-direction: column;
   font-weight: bold;
@@ -41,8 +41,8 @@ form {
 .account-info input {
   background: white;
   border: none;
-  border-bottom: 2px solid var(--light-gray);
-  color: var(--dark-gray);
+  border-bottom: 2px solid #e8e8e8;
+  color: #636466;
   padding: 6px;
   margin-top: 6px;
   width: 95%;
@@ -50,9 +50,9 @@ form {
 
 .account-info .btn {
   display: block;
-  background: var(--gray);
+  background: #dcdcdc;
   border: 0;
-  color: var(--dark-gray);
+  color: #636466;
   cursor: pointer;
   font-weight: bold;
   width: 100px;
@@ -60,13 +60,13 @@ form {
 }
 
 .account-info .btn:hover {
-  background: var(--dark-gray);
+  background: #636466;
   color: white;
 }
 
 .form-login a {
   display: block;
-  color: var(--dark-gray);
+  color: #636466;
   font-style: italic;
   text-decoration: none;
   text-align: center;
@@ -81,7 +81,7 @@ form {
 .tooltip .tooltip-text {
   visibility: hidden;
   width: 150px;
-  background-color: var(--dark-gray);
+  background-color: #636466;
   color: white;
   text-align: center;
   border-radius: 6px;
@@ -100,7 +100,7 @@ form {
   left: 50%;
   margin-left: -5px;
   border: 5px solid transparent;
-  border-top-color: var(--dark-gray);
+  border-top-color: #636466;
 }
 
 .tooltip:hover .tooltip-text {
@@ -131,7 +131,7 @@ form {
   width: 100px;
   height: 100px;
   border-radius: 100%;
-  border: solid 2px var(--dark-gray);
+  border: solid 2px #636466;
 }
 
 .input-file {
@@ -144,102 +144,109 @@ form {
 .form-image label {
   margin: 10px;
   font-weight: bold;
-  color: var(--dark-gray);
-  background-color: var(--light-gray);
+  color: #636466;
+  background-color: #e8e8e8;
   display: inline-block;
   cursor: pointer;
   padding: 5px;
 }
 
 .form-image label:hover {
-  background-color: var(--dark-gray);
+  background-color: #636466;
   color: white;
 }
 
-.vacancies-body {
-  padding: 0;
-  margin: 0;
+/*-----TAB VACANCIES-----*/
+
+.main-div-vacancies{
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
-.header {
-  position: fixed;
-  background: var(--light-gray);
-  box-shadow: 5px 0 8px var(--gray);
-  min-height: calc(100vh - 5px);
-  width: 200px;
-  padding-top: 5px;
-  transition: all 0.5s;
-  left: -100vw;
-  z-index: 1;
-}
-.header-active{
-  left: 0;
+/*Navigation menu*/
+nav.navigation {
+  background: #e8e8e8;
+  min-height: 100vh;
+  width: 14%;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0 0 10px rgba(150, 150, 150, 0.5);
 }
 
-.header-logo {
-  padding-left: 20px;
-  color: var(--dark-gray);
+nav.navigation .logo {
+  margin-top: 0;
+  padding: 20px 0 0 20px;
+  color: #636466;
+  text-transform: uppercase;
 }
 
 .menu-list {
-  list-style: none;
   padding: 0;
 }
 
 .menu-item {
   font-size: 18px;
   min-height: 30px;
-  padding-top: 10px;
-  padding-left: 20px;
 }
 
 .menu-item a {
+  padding: 15px 25px;
   text-decoration: none;
-  color: var(--font);
+  color: #3f3f3f;
 }
 
-.menu-item:hover {
-  background: var(--gray);
+/*----Content vacancies----*/
+
+.content-vacancies{
+  width: 87%;
 }
 
-.menu-item_active {
-  background: var(--gray);
-}
-
-.content {
-  width: 100%;
-}
-
-.content-header {
+/*---- Content vacancies header----*/
+.content-vacancies-header {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background: var(--light-gray);
-  min-height: 35px;
-  box-shadow: 0 5px 8px var(--gray);
+  background: #e8e8e8;
+  height: 8vh;          /*I divided the page into four path by min-height it's 1-height(change one change other)*/
+  box-shadow: inset 2px -2px 7px rgba(150, 150, 150, 0.5);
   padding: 0 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.reset-padding {
+  padding: 0;
 }
 
 .search {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  padding-left: 10px;
 }
 
 .search-image {
   width: 20px;
   height: 20px;
   background: url(../images/sprite.png) -116px 0;
+  margin: 0 5px;
 }
 
 .search-input {
   width: 300px;
   border: none;
-  background: var(--light-gray);
+  background: #e8e8e8;
+}
+
+.search label {
+  margin: 0;
+}
+
+.glyphicon-menu-hamburger {
+  font-size: 21px;
+  cursor: pointer;
+  margin-right: 10px;
+  top: 0;
 }
 
 .header-button button {
@@ -247,6 +254,7 @@ form {
   border: none;
   width: 20px;
   height: 20px;
+  outline: none;
 }
 
 .button-bell {
@@ -257,10 +265,16 @@ form {
   background: url(../images/sprite.png) -413px -1px;
 }
 
-.header-text {
+/*----Content section where filters vacancies----*/
+
+.content-vacancies-section {
+  min-height: 12vh;                                                 /*2-height*/
+}
+
+.content-vacancies-section h1 {
   font-size: 20px;
   font-weight: lighter;
-  padding: 30px;
+  padding: 20px 30px 10px;
   margin: 0;
 }
 
@@ -269,73 +283,15 @@ form {
   padding: 0 15px;
 }
 
+div.filter > span {
+  padding: 0 30px;
+}
+
 .filter {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding-bottom: 20px;
-}
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-  table-layout: fixed;
-  color: var(--font);
-}
-
-td {
-  padding: 20px 15px;
-}
-
-td a {
-  text-decoration: none;
-  color: var(--font);
-}
-
-th {
-  padding: 8px 15px;
-  text-align: left;
-}
-
-tr {
-  border: 1px solid var(--gray);
-}
-
-.button-add {
-  position: fixed;
-  right: 20px;
-  bottom: 50px;
-  height: 50px;
-  width: 50px;
-  border-radius: 100%;
-  border: none;
-  color: var(--dark-gray);
-  background: var(--light-gray);
-  box-shadow: 0 5px 8px var(--gray);
-  font-size: 30px;
-  font-weight: inherit;
-}
-
-.button-add:hover {
-  background: var(--gray);
-}
-
-.content-body {
-  padding: 0;
-  min-height: calc(100vh - 100px);
-}
-
-.content-footer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  height: 50px;
-}
-
-.content-footer span {
-  font-size: 11px;
-  padding: 0 30px;
 }
 
 .dropdown {
@@ -348,12 +304,12 @@ tr {
 }
 
 .dropdown:hover .dropdown-button {
-  background-color: var(--gray);
+  background-color: #dcdcdc;
 }
 
 .dropdown-button {
-  background-color: var(--light-gray);
-  color: var(--dark-gray);
+  background-color: #e8e8e8;
+  color: #636466;
   width: 150px;
   font-size: 14px;
   border: none;
@@ -378,14 +334,14 @@ tr {
   display: none;
   border-radius: 12px;
   position: absolute;
-  background-color: var(--light-gray);
+  background-color: #e8e8e8;
   width: 150px;
-  box-shadow: 0 8px 16px 0 var(--gray);
+  box-shadow: 0 8px 16px 0 #dcdcdc;
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: var(--dark-gray);
+  color: #636466;
   padding: 3px 10px;
   font-size: 14px;
   text-decoration: none;
@@ -393,20 +349,7 @@ tr {
 }
 
 .dropdown-content a:hover {
-  background-color: var(--gray);
-}
-
-.page-items .dropdown-button {
-  font-size: 12px;
-  background-color: white;
-  width: 30px;
-}
-
-.page-items .dropdown-content {
-  font-size: 12px;
-  bottom: 100%;
-  box-shadow: 0 4px 16px 0 var(--gray);
-  width: 30px;
+  background-color: #dcdcdc;
 }
 
 .filter-item {
@@ -414,10 +357,10 @@ tr {
   flex-direction: row;
   justify-content: space-between;
   background: white;
-  border: 1px solid var(--gray);
+  border: 1px solid #dcdcdc;
   border-radius: 12px;
   font-size: 12px;
-  color: var(--dark-gray);
+  color: #636466;
   width: 100px;
   margin: 0 15px;
 }
@@ -428,6 +371,85 @@ tr {
   width: 15px;
   height: 15px;
   background: url(../images/sprite.png) -58px -4px;
+}
+
+/*---- Content table vacancies ----*/
+
+.content-vacancies-table{
+  min-height: 73vh;                                       /*3-height*/
+}
+
+.content-vacancies-table table {
+  margin: 0;
+  border-bottom: 1px solid #dcdcdc;
+  min-height: 73vh;                                       /*3-height*/
+}
+
+.content-vacancies-table table td a {
+  text-decoration: none;
+  color: #3f3f3f;
+}
+
+.content-vacancies-table table tr>th{
+  height: 11vh;
+}
+
+.content-vacancies-table table tr>td{
+  height: 10vh;
+}
+
+.content-vacancies-table table tr>th,
+.content-vacancies-table table tr>td{
+  padding-left: 30px;
+  vertical-align: middle;;
+}
+
+.button-add {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  border: none;
+  color: #636466;
+  background: #e8e8e8;
+  box-shadow: 0 5px 8px #dcdcdc;
+  font-size: 30px;
+  font-weight: inherit;
+  outline: none;
+}
+
+.button-add:hover {
+  background: #dcdcdc;
+}
+
+/*---- Content footer vacancies ----*/
+
+.content-vacancies-footer {
+  height: 6vh;                                        /*4-height*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.content-vacancies-footer span {
+  font-size: 11px;
+  padding: 0 30px;
+}
+
+.page-items .dropdown-button {
+  font-size: 12px;
+  background-color: #fff;
+  width: 30px;
+}
+
+.page-items .dropdown-content {
+  font-size: 12px;
+  bottom: 100%;
+  box-shadow: 0 4px 16px 0 #dcdcdc;
+  width: 30px;
 }
 
 .page-items span {
@@ -449,6 +471,7 @@ tr {
   height: 20px;
   margin: 0 15px;
   border: none;
+  vertical-align: middle;
 }
 
 .button-prev {
@@ -457,4 +480,54 @@ tr {
 
 .button-next {
   background: url(../images/sprite.png) -290px -3px;
+}
+/*---- media for vacancies----*/
+@media (max-width: 992px) {
+  .content-vacancies {
+    position: relative;
+    width: 100%;
+  }
+
+  nav.navigation {
+    display: none;
+    width: 140px;
+  }
+
+  nav.show {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    opacity: 0.9;
+  }
+
+  nav.show ul{
+    margin-top: 8vh;
+  }
+
+  nav h2 {
+    display: none;
+  }
+
+  .content-vacancies-header {
+    box-shadow: 2px -2px 7px rgba(150, 150, 150, 0.5);
+  }
+}
+
+@media (min-width: 992px) {
+  .glyphicon-menu-hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .table-responsive {
+    width: 100%;
+    margin-bottom: 0;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: none;
+  }
 }
