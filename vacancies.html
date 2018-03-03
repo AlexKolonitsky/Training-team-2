@@ -42,34 +42,34 @@
     <main class="content-vacancies-table table-responsive filterable">
       <table class="table">
         <thead>
-          <tr class="filters">
-            <th>
-              <label>
-                Vacancy
-                <input type="text" class="form-control">
-              </label>
-            </th>
-            <!-- class="mobile-device" can change  with table in mobile version-->
-            <th>
-              <label>
-                Last Name
-                <input type="text" class="form-control">
-              </label>
-            </th>
-            <th class="mobile-device">
-              <label>
-                First name
-                <input type="text" class="form-control">
-              </label>
-            </th>
-            <th class="mobile-device">
-              <label>
-                E-mail
-                <input type="text" class="form-control">
-              </label>
-            </th>
-            <th>View</th>
-          </tr>
+        <tr class="filters">
+          <th>
+            <label>
+              Vacancy
+              <input id="position" type="text" class="form-control">
+            </label>
+          </th>
+          <!-- class="mobile-device" can change  with table in mobile version-->
+          <th>
+            <label>
+              Last Name
+              <input id="last-name" type="text" class="form-control">
+            </label>
+          </th>
+          <th class="mobile-device">
+            <label>
+              First name
+              <input id="name" type="text" class="form-control">
+            </label>
+          </th>
+          <th class="mobile-device">
+            <label>
+              E-mail
+              <input id="mail" type="text" class="form-control">
+            </label>
+          </th>
+          <th>View</th>
+        </tr>
         </thead>
         <tbody>
         <tr>
@@ -118,11 +118,11 @@
       </table>
       <button class="button-add">+</button>
     </main>
-    <footer class="content-footer">
+    <footer id="count-items" class="content-footer">
       <span>Rows per page:</span>
       <div class="dropdown page-items">
         <div class="dropdown-button">
-          <span>10</span>
+          <span id="current-items-count">10</span>
           <div class="dropdown-arrow"></div>
         </div>
         <div class="dropdown-content">
@@ -131,8 +131,8 @@
           <a href="#">50</a>
         </div>
       </div>
-      <span>1-10 of 100</span>
-      <div class="button-nav">
+      <span id="range">1-10</span> of <span id="total">100</span>
+      <div id="table-control" class="button-nav">
         <button class="button-prev"></button>
         <button class="button-next"></button>
       </div>

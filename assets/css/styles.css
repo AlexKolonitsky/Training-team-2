@@ -556,10 +556,12 @@ div.filter > span {
 
 .button-prev {
   background: url(../images/sprite.png) -232px -2px;
+  outline: none;
 }
 
 .button-next {
   background: url(../images/sprite.png) -290px -3px;
+  outline: none;
 }
 
 /*---- media for vacancies----*/
