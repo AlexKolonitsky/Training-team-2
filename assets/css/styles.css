@@ -157,7 +157,7 @@ form {
 
 /*-----TAB VACANCIES-----*/
 
-.main-div-vacancies{
+.main-div {
   display: flex;
 }
 
@@ -178,35 +178,44 @@ nav.navigation .logo {
   text-transform: uppercase;
 }
 
-.menu-list {
+nav.navigation .menu-list {
   padding: 0;
 }
 
-.menu-item {
+nav.navigation .menu-item {
   font-size: 18px;
   min-height: 30px;
 }
 
-.menu-item a {
+nav.navigation .nav > li > a {
   padding: 15px 25px;
   text-decoration: none;
   color: #3f3f3f;
 }
 
-/*----Content vacancies----*/
+nav.navigation .nav > li > a:focus{
+  background: #e8e8e8;
+}
 
-.content-vacancies{
+nav.navigation .nav > li > a:hover,
+.selected{
+  background: #dcdcdc;
+}
+
+/*----Content vacancies and candidates----*/
+
+.content {
   width: 87%;
 }
 
-/*---- Content vacancies header----*/
-.content-vacancies-header {
+/*---- Content vacancies and candidates header----*/
+.content-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background: #e8e8e8;
-  height: 8vh;          /*I divided the page into four path by min-height it's 1-height(change one change other)*/
+  height: 50px; /*I divided the page into four path by min-height it's 1-height(change one change other)*/
   box-shadow: inset 2px -2px 7px rgba(150, 150, 150, 0.5);
   padding: 0 15px;
   position: relative;
@@ -264,33 +273,198 @@ nav.navigation .logo {
   background: url(../images/sprite.png) -413px -1px;
 }
 
-/*----Content section where filters vacancies----*/
+/*----Content section where filters vacancies and candidates----*/
 
 .content-vacancies-section {
-  min-height: 12vh;                                                 /*2-height*/
+  min-height: 70px; /*2-height in vacancies*/
 }
 
+.content-candidates-section {
+  min-height: 100px; /*2-height in candidates*/
+}
+
+.content-candidates-section h1,
 .content-vacancies-section h1 {
   font-size: 20px;
   font-weight: lighter;
-  padding: 20px 30px 10px;
+  padding: 20px 30px 20px;
   margin: 0;
-}
-
-.filter span {
-  font-size: 14px;
-  padding: 0 15px;
-}
-
-div.filter > span {
-  padding: 0 30px;
 }
 
 .filter {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-bottom: 20px;
+  align-items: center;
+}
+
+.filter span {
+  font-size: 14px;
+  padding: 2px 15px;
+}
+
+div.filter > span {
+  padding: 0 15px 0 30px;
+}
+
+.filter-items .dropdown-arrow {
+  width: 20px;
+  height: 14px;
+  background: url(../images/sprite.png) 0 -5px;
+}
+
+/*.filter-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: white;
+  border: 1px solid #dcdcdc;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #636466;
+  min-width: 100px;
+  margin: 0 15px;
+}
+
+.button-delete {
+  margin-right: 3px;
+  border: none;
+  width: 15px;
+  height: 15px;
+  background: url(../images/sprite.png) -58px -4px;
+}*/
+
+/*---- Content table vacancies----*/
+
+.content-vacancies-table {
+  min-height: calc(100vh - 170px); /*3-height in vacancies*/
+}
+
+.content-vacancies-table table {
+  margin: 0;
+  border-bottom: 1px solid #dcdcdc;
+  min-height: calc(100vh - 170px); /*3-height in vacancies*/
+}
+
+.content-vacancies-table table td a {
+  text-decoration: none;
+  color: #3f3f3f;
+}
+
+.content-vacancies-table table tr > th {
+  height: 11vh;
+}
+
+.content-vacancies-table table tr > td {
+  height: 10vh;
+}
+
+.content-vacancies-table table tr > th,
+.content-vacancies-table table tr > td {
+  padding-left: 30px;
+  vertical-align: middle;;
+}
+
+.button-add {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  border: none;
+  color: #636466;
+  background: #e8e8e8;
+  box-shadow: 0 5px 8px #dcdcdc;
+  font-size: 30px;
+  font-weight: inherit;
+  outline: none;
+}
+
+.button-add:hover {
+  background: #dcdcdc;
+}
+
+/*---- Content grid candidates----*/
+
+.content-candidates-cards {
+  min-height: calc(100vh - 200px); /*3-height in candidates*/
+}
+
+.content-candidates-cards .row{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.content-candidates-card{
+  padding-right: 0;
+}
+
+.thumbnail {
+  border: none;
+  padding: 0;
+}
+
+.candidates-item {
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 3px 7px rgba(150, 150, 150, 0.5);
+  margin-top: 15px;
+}
+
+.candidates-image {
+  max-height: 280px;
+  overflow: hidden;
+  position: relative;
+}
+
+.candidates-image > span{
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  background: #e8e8e8;
+  padding: 0 5px;
+  font-weight: bolder;
+
+}
+
+.caption{
+  padding-left: 30px;
+}
+
+.candidates-item-job-position{
+  color: #dcdcdc;
+  font-size: 16px;
+}
+
+.candidates-item-name{
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.candidates-item-salary{
+  font-size: 20px;
+}
+
+.candidates-item-time{
+  text-align: right;
+  padding-right: 30px;
+  font-size: 14px;
+  color: #dcdcdc;
+}
+
+/*---- Content footer vacancies and candidates----*/
+
+.content-footer {
+  height: 50px; /*4-height*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.content-footer span {
+  font-size: 11px;
+  padding: 0 30px;
 }
 
 .dropdown {
@@ -323,12 +497,6 @@ div.filter > span {
   justify-content: space-between;
 }
 
-.filter-items .dropdown-arrow {
-  width: 20px;
-  height: 14px;
-  background: url(../images/sprite.png) 0 -5px;
-}
-
 .dropdown-content {
   display: none;
   border-radius: 12px;
@@ -349,93 +517,6 @@ div.filter > span {
 
 .dropdown-content a:hover {
   background-color: #dcdcdc;
-}
-
-.filter-item {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background: white;
-  border: 1px solid #dcdcdc;
-  border-radius: 12px;
-  font-size: 12px;
-  color: #636466;
-  width: 100px;
-  margin: 0 15px;
-}
-
-.button-delete {
-  margin-right: 3px;
-  border: none;
-  width: 15px;
-  height: 15px;
-  background: url(../images/sprite.png) -58px -4px;
-}
-
-/*---- Content table vacancies ----*/
-
-.content-vacancies-table{
-  min-height: 73vh;                                       /*3-height*/
-}
-
-.content-vacancies-table table {
-  margin: 0;
-  border-bottom: 1px solid #dcdcdc;
-  min-height: 73vh;                                       /*3-height*/
-}
-
-.content-vacancies-table table td a {
-  text-decoration: none;
-  color: #3f3f3f;
-}
-
-.content-vacancies-table table tr>th{
-  height: 11vh;
-}
-
-.content-vacancies-table table tr>td{
-  height: 10vh;
-}
-
-.content-vacancies-table table tr>th,
-.content-vacancies-table table tr>td{
-  padding-left: 30px;
-  vertical-align: middle;;
-}
-
-.button-add {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  height: 50px;
-  width: 50px;
-  border-radius: 100%;
-  border: none;
-  color: #636466;
-  background: #e8e8e8;
-  box-shadow: 0 5px 8px #dcdcdc;
-  font-size: 30px;
-  font-weight: inherit;
-  outline: none;
-}
-
-.button-add:hover {
-  background: #dcdcdc;
-}
-
-/*---- Content footer vacancies ----*/
-
-.content-vacancies-footer {
-  height: 6vh;                                        /*4-height*/
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.content-vacancies-footer span {
-  font-size: 11px;
-  padding: 0 30px;
 }
 
 .page-items .dropdown-button {
@@ -480,37 +561,43 @@ div.filter > span {
 .button-next {
   background: url(../images/sprite.png) -290px -3px;
 }
+
 /*---- media for vacancies----*/
 @media (max-width: 992px) {
-  .content-vacancies {
+  .content-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .content {
     position: relative;
     width: 100%;
+    margin-top: 50px;
   }
 
   nav.navigation {
     display: none;
     width: 140px;
+    min-height: 0;
   }
 
   nav.show {
     display: block;
     position: fixed;
-    top: 0;
+    top: 50px;
     left: 0;
     z-index: 1;
-    height: 100%;
+    height: calc(100vh - 50px);
     opacity: 0.9;
-  }
-
-  nav.show ul{
-    margin-top: 8vh;
   }
 
   nav h2 {
     display: none;
   }
 
-  .content-vacancies-header {
+  .content-header {
     box-shadow: 2px -2px 7px rgba(150, 150, 150, 0.5);
   }
 }
@@ -521,12 +608,71 @@ div.filter > span {
   }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
   .table-responsive {
     width: 100%;
     margin-bottom: 0;
     overflow-y: hidden;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     border: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .filter {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .filter-item {
+    margin: 4px;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+
+  .mobile-device {
+    display: none;
+  }
+
+  .header-button {
+    display: inline-flex;
+  }
+
+  .search span {
+    padding: 8px;
+  }
+
+  .button-nav button {
+    margin: 0 0;
+  }
+
+  .content-footer {
+    display: inline-flex;
+  }
+
+  .content-footer span {
+    padding: 0 25px;
+    font-size: 15px;
+  }
+
+  .button-add {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .content-footer span {
+    padding: 0 15px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .content-footer span {
+    padding: 0 5px;
+    font-size: 15px;
   }
 }

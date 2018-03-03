@@ -12,18 +12,18 @@
 </head>
 <body>
 
-<div class="main-div-vacancies">
+<div class="main-div">
   <nav class="navigation">
     <h2 class="logo">hr app</h2>
-    <ul class="nav nav-pills nav-stacked menu-list">
+    <ul class="nav nav-stacked menu-list">
       <li class="menu-item"><a href="#">Interview</a></li>
-      <li class="menu-item"><a href="#">Vacancies</a></li>
-      <li class="menu-item"><a href="#">Candidates</a></li>
+      <li class="menu-item selected"><a href="vacancies.html">Vacancies</a></li>
+      <li class="menu-item"><a href="candidates.html">Candidates</a></li>
       <li class="menu-item"><a href="#">Management</a></li>
     </ul>
   </nav>
-  <div class="reset-padding content-vacancies">
-    <header class="content-vacancies-header">
+  <div class="reset-padding content">
+    <header class="content-header">
       <form class="search">
         <span class="glyphicon glyphicon-menu-hamburger" id="nav-menu"></span>
         <span class="search-image"></span>
@@ -38,79 +38,87 @@
     </header>
     <section class="content-vacancies-section">
       <h1>Vacancies</h1>
-      <div class="filter">
-        <span>Filter by</span>
-        <div class="filter-items dropdown">
-          <div class="dropdown-button">
-            <span>First Name</span>
-            <div class="dropdown-arrow"></div>
-          </div>
-          <div class="dropdown-content">
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-          </div>
-        </div>
-        <div class="filter-item">
-          <span>filter 1</span>
-          <button class="button-delete"></button>
-        </div>
-        <div class="filter-item">
-          <span>filter 2</span>
-          <button class="button-delete"></button>
-        </div>
-      </div>
     </section>
-    <main class="content-vacancies-table table-responsive">
+    <main class="content-vacancies-table table-responsive filterable">
       <table class="table">
+        <thead>
+          <tr class="filters">
+            <th>
+              <label>
+                Vacancy
+                <input type="text" class="form-control">
+              </label>
+            </th>
+            <!-- class="mobile-device" can change  with table in mobile version-->
+            <th>
+              <label>
+                Last Name
+                <input type="text" class="form-control">
+              </label>
+            </th>
+            <th class="mobile-device">
+              <label>
+                First name
+                <input type="text" class="form-control">
+              </label>
+            </th>
+            <th class="mobile-device">
+              <label>
+                E-mail
+                <input type="text" class="form-control">
+              </label>
+            </th>
+            <th>View</th>
+          </tr>
+        </thead>
+        <tbody>
         <tr>
-          <th>Vacancies</th>
-          <th>First Name</th>
-          <th>-//-</th>
-          <th>Candidates</th>
+          <td>Java Developer</td>
+          <td>Malinovski</td>
+          <td class="mobile-device">Denis</td>
+          <td class="mobile-device">denis@gmail.com</td>
+          <td><a href="#">View</a></td>
+        </tr>
+        <tr>
+          <td>.Net Developer</td>
+          <td>Naumau</td>
+          <td class="mobile-device">Daniil</td>
+          <td class="mobile-device">daniil@gmail.com</td>
+          <td><a href="#">View</a></td>
         </tr>
         <tr>
           <td>Java Developer</td>
-          <td>-&#45;&#45;</td>
-          <td>-&#45;&#45;</td>
-          <td><a href="#">View Candidates</a></td>
+          <td>Sobol</td>
+          <td class="mobile-device">Vitalik</td>
+          <td class="mobile-device">vitalik@gmail.com</td>
+          <td><a href="#">View</a></td>
+        </tr>
+        <tr>
+          <td>.Net Developer</td>
+          <td>Bazhanov</td>
+          <td class="mobile-device">Arthur</td>
+          <td class="mobile-device">arthur@gmail.com</td>
+          <td><a href="#">View</a></td>
         </tr>
         <tr>
           <td>Java Developer</td>
-          <td>-&#45;&#45;</td>
-          <td>-&#45;&#45;</td>
-          <td><a href="#">View Candidates</a></td>
+          <td>Tikhonovets</td>
+          <td class="mobile-device">Nika</td>
+          <td class="mobile-device">nika@gmail.com</td>
+          <td><a href="#">View</a></td>
         </tr>
         <tr>
           <td>Java Developer</td>
-          <td>-&#45;&#45;</td>
-          <td>-&#45;&#45;</td>
-          <td><a href="#">View Candidates</a></td>
+          <td>Ivanov</td>
+          <td class="mobile-device">Ivan</td>
+          <td class="mobile-device">ivan@gmail.com</td>
+          <td><a href="#">View</a></td>
         </tr>
-        <tr>
-          <td>Java Developer</td>
-          <td>-&#45;&#45;</td>
-          <td>-&#45;&#45;</td>
-          <td><a href="#">View Candidates</a></td>
-        </tr>
-        <tr>
-          <td>Java Developer</td>
-          <td>-&#45;&#45;</td>
-          <td>-&#45;&#45;</td>
-          <td><a href="#">View Candidates</a></td>
-        </tr>
-        <tr>
-          <td>Java Developer</td>
-          <td>-&#45;&#45;</td>
-          <td>-&#45;&#45;</td>
-          <td><a href="#">View Candidates</a></td>
-        </tr>
+        </tbody>
       </table>
       <button class="button-add">+</button>
     </main>
-    <footer class="content-vacancies-footer">
+    <footer class="content-footer">
       <span>Rows per page:</span>
       <div class="dropdown page-items">
         <div class="dropdown-button">
