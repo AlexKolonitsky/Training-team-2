@@ -1,0 +1,15 @@
+{
+  "name": "HR_REST_APPLICATION",
+  "version": "1.0.0",
+  "description": "REST_API with MySQL",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "mysql": "^2.15.0",
+    "restify": "^5.2.1",
+    "restify-plugins": "^1.6.0"
+  },
+  "author": "Yellow Team",
+  "license": "ISC"
+}
