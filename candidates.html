@@ -42,15 +42,15 @@
         <span>Filter by</span>
         <div class="filter-items dropdown">
           <div class="dropdown-button">
-            <span>Empty</span>
+            <span id="current-state">Empty</span>
             <div class="dropdown-arrow"></div>
           </div>
           <div class="dropdown-content">
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
+            <a href="#">Empty</a>
+            <a href="#">New</a>
+            <a href="#">Accepted for Interview</a>
+            <a href="#">CV-Rejected</a>
+            <a href="#">CV-Accepted</a>
           </div>
         </div>
       </div>
@@ -89,7 +89,8 @@
                 <p class="candidates-item-time">When it was</p>
               </div>
             </div>
-          </div><div class="col-xs-6 col-sm-4 col-md-3 content-candidates-card">
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 content-candidates-card">
           <div class="candidates-item">
             <div class="candidates-image">
               <span >Stage</span>
@@ -120,7 +121,8 @@
                 <p class="candidates-item-time">When it was</p>
               </div>
             </div>
-          </div><div class="col-xs-6 col-sm-4 col-md-3 content-candidates-card">
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 content-candidates-card">
           <div class="candidates-item">
             <div class="candidates-image">
               <span >Stage</span>
@@ -151,7 +153,8 @@
                 <p class="candidates-item-time">When it was</p>
               </div>
             </div>
-          </div><div class="col-xs-6 col-sm-4 col-md-3 content-candidates-card">
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 content-candidates-card">
           <div class="candidates-item">
             <div class="candidates-image">
               <span >Stage</span>
@@ -182,7 +185,8 @@
                 <p class="candidates-item-time">When it was</p>
               </div>
             </div>
-          </div><div class="col-xs-6 col-sm-4 col-md-3 content-candidates-card">
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 content-candidates-card">
           <div class="candidates-item">
             <div class="candidates-image">
               <span >Stage</span>
@@ -213,7 +217,8 @@
                 <p class="candidates-item-time">When it was</p>
               </div>
             </div>
-          </div><div class="col-xs-6 col-sm-4 col-md-3 content-candidates-card">
+          </div>
+          <div class="col-xs-6 col-sm-4 col-md-3 content-candidates-card">
           <div class="candidates-item">
             <div class="candidates-image">
               <span >Stage</span>
@@ -248,21 +253,20 @@
         </div>
       </div>
     </main>
-    <footer class="content-footer">
+    <footer id="count-items" class="content-footer">
       <span>Rows per page:</span>
       <div class="dropdown page-items">
         <div class="dropdown-button">
-          <span>10</span>
+          <span id="current-items">10</span>
           <div class="dropdown-arrow"></div>
         </div>
         <div class="dropdown-content">
           <a href="#">10</a>
           <a href="#">20</a>
-          <a href="#">50</a>
         </div>
       </div>
-      <span>1-10 of 100</span>
-      <div class="button-nav">
+      <span id="range">1-10</span> of <span id="total"> 100</span>
+      <div id="control" class="button-nav">
         <button class="button-prev"></button>
         <button class="button-next"></button>
       </div>
@@ -276,6 +280,6 @@
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
 
-<script src="assets/js/script.js"></script>
+<script src="assets/js/candidates.js"></script>
 </body>
 </html>
