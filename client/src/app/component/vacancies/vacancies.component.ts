@@ -1,4 +1,7 @@
- import { Component } from '@angular/core';
+ import { Component,TemplateRef} from '@angular/core';
+ import {BsModalService} from "ngx-bootstrap/modal";
+ import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
+
 
  import {Vacancies} from './vacancies';
 
@@ -9,6 +12,7 @@
  })
 
  export class VacanciesComponent  {
+
    items: Vacancies[] =
      [
        { vacancy: "Big Data Developer", description: "blabla", salary: 1500, candidates: "View Candidates" },
@@ -19,4 +23,15 @@
        { vacancy: "Big Data Developer", description: "blabla", salary:3000, candidates: "View Candidates"},
        { vacancy: "Big Data Developer", description: "blabla", salary:3000, candidates: "View Candidates"}
      ];
+
+
+   modalRef: BsModalRef;
+
+   constructor(private modalService: BsModalService) {
+   }
+
+   openModal(template: TemplateRef<any>) {
+     this.modalRef = this.modalService.show(template);
+   }
+
  }

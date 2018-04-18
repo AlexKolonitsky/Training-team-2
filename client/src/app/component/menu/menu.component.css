@@ -1,6 +1,6 @@
 nav.navigation {
   background: #e8e8e8;
-  min-height: 100vh;
+  min-height: 100%;  /*---- был vh  ---*/
   min-width: 140px;
   margin: 0;
   padding: 0;

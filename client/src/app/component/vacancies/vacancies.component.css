@@ -59,3 +59,39 @@
   background: #dcdcdc;
 }
 
+
+/* --- Modal window --- */
+
+.modal input {
+  height: 22px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+  border: 1px solid #c0c0c0;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-body label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vacancies-button {
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #dcdcdc;
+  border: 1px solid #c0c0c0;
+  border-radius: 8px;
+  margin: 0 20px;
+  height: 30px;
+}
+
+.vacancies-button:hover {
+  background: #c0c0c0;
+}
+

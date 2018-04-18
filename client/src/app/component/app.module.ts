@@ -16,7 +16,7 @@ import { InterviewComponent } from './interview/interview.component';
 import { FullCalendarModule } from 'ng-fullcalendar';
 import { EventService } from "../service/event/event.service";
 import { CandidatesComponent } from './candidates/candidates.component';
-
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +28,8 @@ import { CandidatesComponent } from './candidates/candidates.component';
     SearchInputComponent,
     VacanciesComponent,
     InterviewComponent,
-    CandidatesComponent
+    CandidatesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -41,3 +42,4 @@ import { CandidatesComponent } from './candidates/candidates.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
