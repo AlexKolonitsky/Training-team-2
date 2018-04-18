@@ -2,6 +2,7 @@
  import {BsModalService} from "ngx-bootstrap/modal";
  import { BsModalRef } from 'ngx-bootstrap/modal/bs-modal-ref.service';
 
+
  import {Vacancies} from './vacancies';
 
  @Component({
@@ -23,6 +24,7 @@
        { vacancy: "Big Data Developer", description: "blabla", salary:3000, candidates: "View Candidates"}
      ];
 
+
    modalRef: BsModalRef;
 
    constructor(private modalService: BsModalService) {
@@ -31,4 +33,5 @@
    openModal(template: TemplateRef<any>) {
      this.modalRef = this.modalService.show(template);
    }
+
  }
