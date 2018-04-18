@@ -42,7 +42,7 @@
     <tbody>
       <tr *ngFor="let candidate of candidates">
         <td class='candidate-photo'>
-          <div><img src=''alt='' width='100'></div>
+          <div><img src='{{candidate.photo}}'alt='' width='100'></div>
         </td>
         <td class='candidate-name'>{{candidate.name}}</td>
         <td class='candidate-mail'>{{candidate.email}}</td>
@@ -54,3 +54,4 @@
     </tbody>
   </table>
 </main>
+<app-footer></app-footer>
