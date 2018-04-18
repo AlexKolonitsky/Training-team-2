@@ -14,7 +14,8 @@ import { ModalModule } from 'ngx-bootstrap';
 import { VacanciesComponent } from './vacancies/vacancies.component';
 import { InterviewComponent } from './interview/interview.component';
 import { FullCalendarModule } from 'ng-fullcalendar';
-import {EventService} from "../service/event/event.service";
+import { EventService } from "../service/event/event.service";
+import { CandidatesComponent } from './candidates/candidates.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import {EventService} from "../service/event/event.service";
     NotificationBlockComponent,
     SearchInputComponent,
     VacanciesComponent,
-    InterviewComponent
+    InterviewComponent,
+    CandidatesComponent
   ],
   imports: [
     BrowserModule,

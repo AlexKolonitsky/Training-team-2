@@ -1,0 +1,65 @@
+html {
+  overflow-y: scroll;
+}
+
+.candidates-section {
+  min-height: 70px;
+}
+
+.candidates-section h1 {
+  font-size: 20px;
+  font-weight: lighter;
+  padding: 20px 30px 20px;
+  margin: 0;
+}
+
+.candidates-table {
+  min-height: calc(100vh - 170px);
+}
+
+.candidates-table table tr > th:first-child,
+.candidates-table table tr > td:first-child{
+  padding: 0 30px ;
+}
+
+.candidates-table table tr > th,
+.candidates-table table tr > td {
+  height: 60px;
+  vertical-align: middle;;
+}
+
+.candidates-table table tr > td{
+  padding-left: 15px;
+}
+
+.candidates-table table tbody tr{
+  border-bottom: 1px solid #ddd;
+}
+
+.candidate-photo div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+@media (max-width: 992px) {
+  .candidates-table table th:nth-child(3),
+  .candidates-table table td:nth-child(3),
+  .candidates-table table th:nth-child(5),
+  .candidates-table table td:nth-child(5){
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .candidates-table table th:nth-child(4),
+  .candidates-table table td:nth-child(4),
+  .candidates-table table th:nth-child(6),
+  .candidates-table table td:nth-child(6){
+    display: none;
+  }
+}

@@ -1,0 +1,56 @@
+<section class="candidates-section">
+  <h1>Candidates</h1>
+</section>
+<main class="candidates-table table-responsive">
+  <table id="candidates" class="table">
+    <thead>
+      <tr class="filters">
+        <th>Photo</th>
+        <th>
+          <label>
+            Name
+            <input id="name" type="text" class="form-control">
+          </label>
+        </th>
+        <th>
+          <label>
+            E-mail
+            <input id="email" type="text" class="form-control">
+          </label>
+        </th>
+        <th>
+          <label>
+            Position
+            <input id="position" type="text" class="form-control">
+          </label>
+        </th>
+        <th>
+          <label>
+            Date
+            <input id="date" type="text" class="form-control">
+          </label>
+        </th>
+        <th>
+          <label>
+            Stage
+            <input id="status" type="text" class="form-control">
+          </label>
+        </th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let candidate of candidates">
+        <td class='candidate-photo'>
+          <div><img src=''alt='' width='100'></div>
+        </td>
+        <td class='candidate-name'>{{candidate.name}}</td>
+        <td class='candidate-mail'>{{candidate.email}}</td>
+        <td class='candidate-position'>{{candidate.position}}</td>
+        <td class='candidate-date'>{{candidate.date}} day ago</td>
+        <td class='candidate-stage'>{{candidate.status}}</td>
+        <td><a href="">Show Profile</a></td>
+      </tr>
+    </tbody>
+  </table>
+</main>
