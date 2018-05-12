@@ -130,7 +130,15 @@ export class VacanciesComponent implements OnInit {
       data => this.clearNewVacancies(),
       error => console.log(error),
       ()=>this.getVacancies());
+
   }
+
+
+  // addVacancies(vacancies) {
+  //   this.vacanciesService.addVacancies(vacancies).subscribe(
+  //     error => console.log(error));
+  //   this.items.unshift(vacancies);
+  // }
 
   changeMode() {
     this.isEdit = !this.isEdit;
@@ -145,6 +153,7 @@ export class VacanciesComponent implements OnInit {
   clearNewVacancies() {
     this.modalRef.hide();
     this.vacancies = new Vacancies();
+
   }
 
   openModal(template: TemplateRef<any>) {

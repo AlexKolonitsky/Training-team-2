@@ -161,6 +161,8 @@
           Description is required
         </div>
       </label>
+
+
       <label>
         *Salary:
         <input type="text" class="add-salary form-control" [(ngModel)]="vacancies.salary" required name="salary"
@@ -169,6 +171,12 @@
           Salary is required.Please, enter a numbers
         </div>
       </label>
+
+      <label>
+        Status:
+        <input type="text" class="form-control" [(ngModel)]="vacancies.status" required name="status" #status="ngModel" disabled>
+      </label>
+
     </div>
     <div class="modal-footer ">
       <button type="button" class="button-save-vacancies btn btn-success"

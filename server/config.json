@@ -12,7 +12,7 @@
   "mailer": {
     "service": "Gmail",
     "username": "mifort.hr.app@gmail.com",
-    "password": "Pass!123",
+    "password": "Pass!123456@!",
     "sendAddr": "mifort.hr.app@gmail.com"
   }
 }
